@@ -1,0 +1,28 @@
+{
+
+  "name": "com.todo_list_app.global",
+
+  "version": "1.0.0",
+
+  "description": "Html, Css And JavaScript Todo List App",
+
+  "main": "index.js",
+
+  "scripts": {
+
+    "test": "echo \"Error: no test specified\" && exit 1"
+
+  },
+
+  "author": "Alhiane Lahcen",
+
+  "license": "ISC",
+
+  "dependencies": {
+
+    "sweetalert2": "^11.10.1"
+
+  }
+
+}
+

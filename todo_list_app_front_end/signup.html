@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Todo Lis - Signup</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+    <header class="page-header">
+
+        <div class="container">
+
+            <h2 class="logo">
+
+                <a href="index.html">
+
+                    <img src="./images/logo.png" alt="Image Not Found">
+
+                    todolist
+
+                </a>
+
+            </h2>
+
+            <nav class="navigation">
+
+                <div class="bars" id="bar">
+                
+                    <span></span>
+                
+                    <span></span>
+                
+                    <span></span>
+                
+                </div>
+
+                <ul class="links" id="links">
+
+                    <li><a href="about.html">About Us</a></li>
+
+                    <li><a href="contact.html">Contact Us</a></li>
+
+                    <li class="has-btn"><a href="signin.html" class="btn">Log in</a></li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="sec sign">
+
+        <div class="container">
+
+            <h2 class="sec-title">Sign up</h2>
+
+            <form action="#" id="sign-up-form" novalidate>
+
+                <input 
+
+                    class="input needed" 
+                    
+                    name="firstName" 
+                    
+                    type="text" 
+                    
+                    placeholder="First Name"
+                
+                >
+
+                <span class="invalid-msg invalid-firstName"></span>
+
+                <input 
+
+                    class="input needed" 
+                
+                    name="lastName" 
+                    
+                    type="text" 
+                    
+                    placeholder="Last Name"
+                
+                >
+
+                <span class="invalid-msg invalid-lastName"></span>
+
+                <input 
+                
+                    class="input needed" 
+                    
+                    name="email" 
+                    
+                    type="email" 
+                    
+                    placeholder="Email"
+                
+                >
+
+                <span class="invalid-msg invalid-email"></span>
+
+                <input 
+                
+                    class="input eeded password-input"
+                
+                    name="password" 
+                    
+                    type="password" 
+                
+                    placeholder="Password"
+                
+                >
+
+                <span class="invalid-msg invalid-password"></span>
+
+                <div class="show-hide-password">
+
+                    <input type="checkbox" id="password-checkbox">
+
+                    <label for="password-checkbox" id="password-label">
+                        
+                        Show Password
+                    
+                    </label>
+
+                </div>
+
+                <input type="submit" value="Sign up" class="btn">
+
+            </form>
+
+            <p>Already signed up? <a href="signin.html">Go to login</a></p>
+
+        </div>
+
+    </section>
+
+    <script src="js/scripts.js"></script>
+
+    <script src="js/signup.js" type="module"></script>
+
+</body>
+
+</html>

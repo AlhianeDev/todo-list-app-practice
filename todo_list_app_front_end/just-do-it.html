@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Todo Lis - Just Do It</title>
+
+    <link
+
+        href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css" 
+        
+        rel="stylesheet"
+
+    >
+
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    
+    <header class="page-header">
+
+        <div class="container">
+
+            <h2 class="logo">
+            
+                <a href="index.html">
+                
+                    <img src="./images/logo.png" alt="Image Not Found">
+                
+                    todolist
+                
+                </a>
+            
+            </h2>
+            
+            <nav class="navigation">
+
+                <div class="bars" id="bar">
+
+                    <span></span>
+
+                    <span></span>
+
+                    <span></span>
+
+                </div>
+            
+                <ul class="links" id="links">
+            
+                    <li><a href="about.html">About Us</a></li>
+                    
+                    <li><a href="contact.html">Contact Us</a></li>
+                    
+                    <li class="has-btn">
+                        
+                        <a href="#" class="profile-btn" id="profile-btn">
+
+                            <img
+                            
+                                src="https://placehold.co/30x30/#be3709/31343C"
+                                
+                                alt="No Image"
+                            
+                            >
+
+                            <h3 class="username" id="username">Lahcen</h3>
+
+                            <span class="icon">
+                                
+                                <i class="fa-solid fa-chevron-down"></i>
+                            
+                            </span>
+
+                        </a>
+
+                        <div class="drop-down-menu" id="drop-down-menu">
+
+                            <a href="#" id="account-btn">
+
+                                <span class="icon">
+                                
+                                    <i class="fa-solid fa-user"></i>
+                                
+                                </span>
+
+                                Account
+
+                            </a>
+
+                            <a href="#" id="logout-btn">
+                            
+                                <span class="icon">
+                            
+                                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                            
+                                </span>
+                            
+                                Log out
+
+                            </a>
+
+                        </div>
+                
+                    </li>
+            
+                </ul>
+            
+            </nav>
+
+        </div>
+
+    </header>
+
+    <section class="sec just-do-it">
+
+        <div class="container">
+
+            <h2 class="sec-title">Just Do It</h2>
+
+            <div class="todos" id="todos-container">
+            
+                <!-- <div class="todo">
+
+                    <div class="actions">
+                    
+                        <a href="#">Confirm</a>
+                    
+                        <a href="#">Update</a>
+                    
+                        <a href="#">Delete</a>
+                    
+                    </div>
+
+                    <div class="todo-head">
+
+                        <h3 class="todo-title">Todo Title</h3>
+
+                        <div class="dots">
+                        
+                            <span></span>
+                        
+                            <span></span>
+                        
+                            <span></span>
+                        
+                        </div>
+
+                    </div>
+            
+                    <p class="todo-desc">Have a marvelous day off, Lahcen!
+                        Schedule days off in the Productivity tab of your Settings menu.</p>
+            
+                    <h4 class="created-date">2023-12-10T11:00:19.611964</h4>
+            
+                </div> -->
+            
+            </div>
+
+            <div class="plus-task" id="plus-task">
+            
+                <span><i class="fa-solid fa-plus"></i></span>
+            
+                Add task
+            
+            </div>
+
+            <form action="#" id="add-task-form">
+
+                <span class="close-popup" id="close-popup">
+                    
+                    <i class="fa-solid fa-xmark"></i>
+                
+                </span>
+
+                <input type="text" name="taskId" hidden>
+
+                <input type="text" name="taskTitle" class="input" placeholder="Task Title">
+
+                <input type="text" name="taskDesc" class="input" placeholder="Task Description">
+
+                <input type="submit" class="btn" value="Add Task">
+
+            </form>
+
+            <div class="pagination" id="pagination">
+
+                <!-- <a href="#">&laquo;</a> -->
+
+                <a href="#" class="active">1</a>
+
+                <!-- <a href="#">&raquo;</a> -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="full-container">
+
+        <div class="container">
+
+            <section class="account" id="account">
+
+                <div class="head-component">
+
+                    <h4>Account</h4>
+
+                    <span class="close-popup" id="close-account-popup">
+                    
+                        <i class="fa-solid fa-xmark"></i>
+                    
+                    </span>
+
+                </div>
+
+                <div class="first-name-component">
+                
+                    <h4>First Name</h4>
+                
+                    <button data-access="firstName-form" class="change-btn btn">
+                
+                        Change First Name
+                
+                    </button>
+                
+                </div>
+            
+                <form action="#" class="firstName-form">
+            
+                    <input type="text" name="firstName">
+            
+                    <input type="submit" class="btn" value="Update">
+            
+                </form>
+
+                <div class="last-name-component">
+                
+                    <h4>Last Name</h4>
+                
+                    <button data-access="lastName-form" class="change-btn btn">
+                
+                        Change Last Name
+                
+                    </button>
+                
+                </div>
+            
+                <form action="#" class="lastName-form">
+            
+                    <input type="text" name="lastName">
+            
+                    <input type="submit" class="btn" value="Update">
+            
+                </form>
+            
+                <div class="email-component">
+            
+                    <h4>Email</h4>
+            
+                    <button data-access="email-form" class="change-btn btn">
+            
+                        Change Email
+            
+                    </button>
+            
+                </div>
+            
+                <form action="#" class="email-form">
+            
+                    <input type="email" name="oldEmail" readonly>
+            
+                    <input type="email" name="newEmail" placeholder="New email">
+            
+                    <input type="password" name="password" placeholder="Password">
+            
+                    <input type="submit" class="btn" value="Update">
+            
+                </form>
+            
+                <div class="password-component">
+            
+                    <h4>Password</h4>
+            
+                    <button data-access="password-form" class="change-btn btn">
+            
+                        Change Password
+            
+                    </button>
+            
+                </div>
+            
+                <form action="#" class="password-form">
+            
+                    <input type="password" name="oldPassword" placeholder="Old password">
+            
+                    <input type="password" name="newPassword" placeholder="New password">
+            
+                    <input type="password" name="passwordConfirm" placeholder="Confirm new password">
+            
+                    <input type="submit" class="btn" value="Update">
+            
+                </form>
+            
+                <h4>Delete Account</h4>
+                
+                <p>This will immediately delete all of your data including tasks, projects, comments, and more</p>
+                
+                <a href="#" class="btn" id="delete-account-btn">Delete Account</a>
+            
+            </section>
+
+        </div>
+
+    </div>
+
+    <script
+
+        src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js">
+
+    </script>
+
+    <script src="js/all.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+    <script src="js/profile.js" type="module"></script>
+
+    <script src="js/do.it.js" type="module"></script>
+
+</body>
+
+</html>
